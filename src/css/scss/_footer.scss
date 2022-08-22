@@ -1,0 +1,88 @@
+#footer{
+    padding: 50px 0;
+    background-color: $black;
+    .contact{
+        padding: 0;
+        margin: 0;
+        .conact__item{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            text-decoration: none;
+            span{
+                @include trans;
+                margin-left: 10px;
+                font-weight: 700;
+                color:#fff;
+                font-size: 18px;
+                text-align: left;
+                span{
+                    @include trans;
+                    font-weight: 300;
+                }
+               
+            }
+            img{
+                padding: 3px;
+                @include trans;
+                transform: rotate(0);
+            }
+            &:hover{
+                span{
+                    color:$main;
+                }
+                img{
+                    background-color: rgba(255,255,255, 0.04);
+                }
+            }
+        }
+    }
+    .inf{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        margin-bottom: 20px;
+        img{
+            margin-left: 10px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+#go-to-top{
+    position: fixed;
+    z-index: 2222222;
+    right: 0px;
+    top: 50%;
+    -webkit-transform: translate(110px, -50%);
+    transform: translate(110px, -50%);
+    border: 1px solid $main;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 5px;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 16px solid $main;
+        cursor: pointer;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+}
+.go-to-to-active {
+    -webkit-transform: translate(-10px, -50%) !important;
+    transform: translate(-10px, -50%) !important;
+}

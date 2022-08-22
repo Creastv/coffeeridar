@@ -9,7 +9,7 @@
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -17,4 +17,4 @@
     <header id="header" itemscope itemtype="http://schema.org/WPHeader">
         <?php get_template_part('templates-parts/header/nav'); ?>
     </header>
-    <main id="main" class="container">
+    <main id="main" class="container-fluid">

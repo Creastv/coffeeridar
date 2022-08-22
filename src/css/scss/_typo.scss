@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 h1,
 h2,
@@ -15,12 +15,15 @@ li,
 td,
 th {
   color: $p;
+  font-weight: 300;
 }
 b,
 strong {
+  font-weight: 700;
 }
 a {
-  text-decoration: none;
+  // text-decoration: none;
+  color:$main;
   @include trans;
   &:active {
     color: darken($main, 20%);

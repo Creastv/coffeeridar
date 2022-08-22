@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h1,
@@ -17,10 +17,16 @@ li,
 td,
 th {
   color: #626161;
+  font-weight: 300;
+}
+
+b,
+strong {
+  font-weight: 700;
 }
 
 a {
-  text-decoration: none;
+  color: #900000;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
@@ -56,5 +62,180 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+}
+
+#main {
+  margin-bottom: 50px;
+}
+
+.container-fluid {
+  max-width: 1750px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1550px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.row .col {
+  padding: 0 10px;
+}
+
+.row .col-1 {
+  width: 100%;
+}
+
+.row .col-2 {
+  width: 50%;
+}
+
+@media only screen and (max-width: 998px) {
+  .row .col-2 {
+    width: 100%;
+  }
+}
+
+.row .col-3 {
+  width: 33.33%;
+}
+
+@media only screen and (max-width: 998px) {
+  .row .col-3 {
+    width: 100%;
+  }
+}
+
+.row-justify-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer {
+  padding: 50px 0;
+  background-color: #0a0a0a;
+}
+
+#footer .contact {
+  padding: 0;
+  margin: 0;
+}
+
+#footer .contact .conact__item {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+#footer .contact .conact__item span {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  margin-left: 10px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+}
+
+#footer .contact .conact__item span span {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  font-weight: 300;
+}
+
+#footer .contact .conact__item img {
+  padding: 3px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+#footer .contact .conact__item:hover span {
+  color: #900000;
+}
+
+#footer .contact .conact__item:hover img {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+#footer .inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+#footer .inf img {
+  margin-left: 10px;
+}
+
+#footer .inf:last-child {
+  margin-bottom: 0;
+}
+
+#go-to-top {
+  position: fixed;
+  z-index: 2222222;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translate(110px, -50%);
+  transform: translate(110px, -50%);
+  border: 1px solid #900000;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+#go-to-top:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 16px solid #900000;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.go-to-to-active {
+  -webkit-transform: translate(-10px, -50%) !important;
+  transform: translate(-10px, -50%) !important;
 }
 /*# sourceMappingURL=style.css.map */
