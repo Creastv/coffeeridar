@@ -11,3 +11,46 @@ body {
   padding: 0;
   background-color: #fff;
 }
+
+#main{
+margin-bottom: 50px;
+}
+
+.container-fluid{
+  max-width: 1750px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container{
+  max-width: 1550px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    .col{
+      padding: 0 10px;
+    }
+    .col-1{
+      width: 100%;
+    }
+    .col-2{
+      width: 50%;
+      @media #{$md} {
+        width: 100%;
+      }
+    }
+    .col-3{
+      width: 33.33%;
+      @media #{$md} {
+        width: 100%;
+      }
+    }
+  }
+  .row-justify-content{
+    justify-content: center;
+  }

@@ -1,2 +1,2 @@
 <?php
-get_template_part( 'templates_parts/content/content-page' );
+get_template_part( 'templates-parts/content/content-page' );
