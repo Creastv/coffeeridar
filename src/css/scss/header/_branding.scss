@@ -1,0 +1,16 @@
+.nav-brand{
+    width: 20%;
+    @media #{$xs} {
+        width: 100%;
+    }
+    img, svg{
+        width: 100%;
+        max-width: 197px;
+        height: auto;
+        @media #{$xs} {
+            max-width: 250px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

@@ -15,6 +15,16 @@
 
 <body <?php body_class(); ?>>
     <header id="header" itemscope itemtype="http://schema.org/WPHeader">
-        <?php get_template_part('templates-parts/header/nav'); ?>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col col-1 top">
+               <?php get_template_part('templates-parts/header/navbar'); ?>
+            </div>
+            <div class="col col-1">
+               <?php get_template_part('templates-parts/header/title-page'); ?>
+            </div>
+        </div>
+        
+        </div>
     </header>
     <main id="main" class="container-fluid">

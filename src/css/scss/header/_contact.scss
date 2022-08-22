@@ -1,0 +1,43 @@
+.contact-header{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     @media #{$sm} {
+        flex-wrap: wrap;
+     }
+    @media #{$xs} {
+        order:3
+    }
+    li{
+        display: flex;
+        align-items: center;
+        a{
+            display: flex;
+            align-items: center;
+            padding: 10px 25px;
+            text-decoration: none;
+            color:#fff;
+            font-weight: 700;
+            @include trans;
+            @media #{$md} {
+                padding: 5px;
+            }
+            img{
+                display: block;
+                margin-right: 15px;
+                @media #{$md} {
+                    margin-right: 5px;
+                }
+            }
+            span{
+            
+            }
+            &:hover{
+                color:$main;
+            }
+        }
+    }
+}

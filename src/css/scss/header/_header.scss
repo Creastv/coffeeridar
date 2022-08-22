@@ -1,0 +1,9 @@
+#header{
+    background-color: $black;
+    background-image: url('../img/header-bg-full.png');
+    background-size: cover;
+    padding-top: 60px;
+    @media #{$sm} {
+        padding-top: 15px;
+     }
+}

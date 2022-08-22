@@ -4,11 +4,17 @@
 
 @import "scss/global";
 @import "scss/footer";
-@import "scss/header";
+@import "scss/header/header";
+@import "scss/header/navbar";
+@import "scss/header/nav";
+@import "scss/header/branding";
+@import "scss/header/title-page";
+@import "scss/header/social-media";
+@import "scss/header/contact";
+
 @import "scss/index";
 @import "scss/page";
-@import "scss/header/nav";
-@import "scss/header/title-page";
+
 @import "scss/acf-parts/bicycle";
 @import "scss/acf-parts/get-close-section";
 @import "scss/acf-parts/hero-section";

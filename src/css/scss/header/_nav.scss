@@ -1,0 +1,105 @@
+.header-nav{
+    @include trans;
+    @media #{$lg} {
+        width: 50%;
+        height: 100vh;
+        background: lighten($black, 5%);
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: -100%;
+        box-shadow: -1px 17px 41px 10px rgba(0, 0, 0, .4);
+    }
+    @media #{$md} {
+        width: calc(100% - 80px);
+    }
+    @media #{$sm} {
+        width: calc(100% - 60px);
+    }
+    #logo-bg-nav{
+        display: none;
+        @media #{$lg} {
+            display: block;
+            width: 93%;
+            height: auto;
+            position: absolute;
+            bottom: 0px;
+            opacity: 0.1;
+        }
+    }
+    .header-nav-list{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        @media #{$lg} {
+            display: block;
+        }
+        
+        li{
+            a{
+                color:#fff;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding: 10px 25px;
+                text-decoration: none;
+                position: relative;
+                @include trans;
+                 @media #{$xlg} {
+                    padding: 10px;
+                 }
+                @media #{$lg} {
+                    font-size: 21px;
+                    padding: 10px 30px;
+                    display: block;
+                }
+                @media #{$sm} {
+                    font-size: 16px;
+                    padding: 10px 10px 10px 30px;
+                    display: block;
+                }
+                &:before{
+                    content:"";
+                    position: absolute;
+                    z-index: 0;
+                    width: 4px;
+                    height: 4px;
+                    top: 50%;
+                    right: -2px;
+                    transform: translate(0, -50%);
+                    background-color: $main;
+                    @include trans;
+                    @media #{$lg} {
+                        display: none;
+                    }
+                }
+              
+                &:hover{
+                    color:$main;
+                    &:before{
+                        content:"";
+                        position: absolute;
+                        width: 50%;
+                        height: 4px;
+                        top: 50%;
+                        right: 5px;
+                        transform: translate(0, -50%);
+                        background-color: rgba(#fff, 0.12);
+                        opacity: 1!important;
+                    }
+                }
+            }
+            &:last-child{
+                a{
+                    &:before{
+                       opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-nav.active{
+    left: 0;
+}
