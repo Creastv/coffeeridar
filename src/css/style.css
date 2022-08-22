@@ -1,1 +1,60 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #900000;
+}
+
+p,
+li,
+td,
+th {
+  color: #626161;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+a:active {
+  color: #2a0000;
+}
+
+a:hover {
+  color: #f60000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
