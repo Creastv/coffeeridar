@@ -7,6 +7,5 @@
         <span></span>
     </div>
     <?php get_template_part('templates-parts/header/nav'); ?>
-    
 </div>
 <span class="sep__navbar"> <span></span></span>

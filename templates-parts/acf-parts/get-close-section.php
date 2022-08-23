@@ -11,6 +11,7 @@ if( $link ){
 }
 ?>
 <?php if($on) { ?>
+<span class="anchor" id="<?php the_field('anchor_blr')?>"></span> 
 <section id="get-close">
     <div class="container text-center">
         <div class="row">

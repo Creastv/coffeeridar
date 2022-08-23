@@ -3,6 +3,8 @@
     background-image: url('../img/header-bg-full.png');
     background-size: cover;
     padding-top: 60px;
+    position: relative;
+    z-index: 99;
     @media #{$sm} {
         padding-top: 15px;
      }

@@ -17,6 +17,8 @@
         }
         img{
             // margin-bottom: 20px;
+              width: 100%;
+            height: auto;
         }
         .cat{
             span{
@@ -58,6 +60,7 @@
     }
      .arrows{
         img{
+          
              @media #{$lg} {
                 width: 70px;
                 height: auto;

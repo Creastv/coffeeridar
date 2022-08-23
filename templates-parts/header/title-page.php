@@ -1,5 +1,6 @@
 
 <?php get_template_part('templates-parts/header/branding'); ?>
+<?php if(!is_404()) { ?>
 <div class="title-wraper">
 <h1 class="page-title text-center">
       <?php if ( is_category() ) :
@@ -36,3 +37,4 @@
     endif; ?>
 </h1>
 </div>
+<?php } ?>

@@ -1,5 +1,4 @@
 // Header nav menu
-
 (window.load = function (event) {
   const togglerNav = document.querySelector(".toggler-nav");
   const headerNav = document.querySelector(".header-nav");
@@ -16,6 +15,18 @@
       navFlag = false;
     }
   });
+
+  const itemsNAv = document.querySelectorAll('.header-nav a')
+    // console.log(itemsNAv[1]);
+  for(let i = 0; i < itemsNAv.length; i++){
+    console.log(itemsNAv[1]);
+    itemsNAv[i].addEventListener("click", () => {
+      headerNav.classList.remove("active");
+      togglerNav.classList.remove("active");
+      navFlag = false;
+    });
+  }
+
   // Go to Top
   const goToTop = document.querySelector("#go-to-top");
   
@@ -30,15 +41,27 @@
     }
   });
 
-  // // sticy nabvbar
-  // const navbar = document.querySelector(".navbar");
-  //  document.addEventListener("scroll", () => {
-  //   if (window.pageYOffset >= 200) {
-  //      navbar.classList.add("active");
-  //   } else {
-  //     navbar.classList.remove("active");
-  //   }
-  // });
+  // sticy nabvbar
+  const navbar = document.querySelector(".navbar");
+   document.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 200) {
+       navbar.classList.add("active");
+    } else {
+      navbar.classList.remove("active");
+    }
+  });
+
+// sticky stickiers
+  const sti = document.querySelector(".stickiers");
+   document.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 200) {
+       sti.classList.add("active");
+    } else {
+      sti.classList.remove("active");
+    }
+  });
    
+  
+
 
 })();

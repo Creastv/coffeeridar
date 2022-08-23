@@ -3,7 +3,9 @@ $on = get_field('wyswietl_sekcje_form');
 $title = get_field('opis_form');
 $form = get_field('form');
 ?>
+
 <?php if($on) { ?>
+<span class="anchor" id="<?php the_field('anchor_form')?>"></span>
 <section id="rez-form">
     <div class="container-fluid">
         <div class="row">
@@ -19,26 +21,3 @@ $form = get_field('form');
     </div>
 </section>
 <?php } ?>
-<!-- <div class="row rezerwacja">
-<div class="form-group">
-    <label> <span class="red">Imię i nazwisko</span>
-    [text* your-name class:form-control placeholder "jan kowalski"] </label>
-</div>
-<div class="form-group">
-    <label> <span class="red">Adres email</span>
-    [email* your-email class:form-control placeholder "twojadresmeial@email.com"] </label>
-</div>
-<div class="form-group">
-    <label> <span class="red">Wybierz model</span>
-   [select* bike class:form-control ] </label>
-</div>
-
-<div class="form-group">
-    <label> <span class="red">Od</span>
-  [date* date-od min:2022-08-23 class:form-control placeholder] </label>
-</div>
-<div class="form-group">
-    <label> <span class="red">Do</span>
-    [date* date-do min:2022-08-23 class:form-control placeholder]</label>
-</div>
-</div> -->

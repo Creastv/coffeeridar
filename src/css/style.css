@@ -231,6 +231,10 @@ body {
   height: auto;
 }
 
+.anchor {
+  display: block;
+}
+
 #footer {
   padding: 50px 0;
   background-color: #0a0a0a;
@@ -356,6 +360,8 @@ body {
   background-image: url("../img/header-bg-full.png");
   background-size: cover;
   padding-top: 60px;
+  position: relative;
+  z-index: 99;
 }
 
 @media only screen and (max-width: 768px) {
@@ -395,14 +401,46 @@ body {
   top: 0;
   left: 0;
   background-color: #0a0a0a;
+  padding: 0px 15px;
 }
 
-.navbar.active .social-media {
-  display: none;
+@media only screen and (max-width: 768px) {
+  .navbar.active {
+    padding: 10px;
+  }
 }
 
-.navbar.active .contact-header {
-  display: none;
+@media only screen and (max-width: 768px) {
+  .navbar.active .social-media {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar.active .toggler-nav {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar.active .contact-header {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 12px;
+  }
+  .navbar.active .contact-header img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .navbar.active .contact-header li:nth-child(2) {
+    display: none;
+  }
 }
 
 .toggler-nav {
@@ -879,6 +917,11 @@ body.page-id-5 {
   transition: all ease-in-out 0.2s;
 }
 
+#bikes .bike-cart img {
+  width: 100%;
+  height: auto;
+}
+
 #bikes .bike-cart .cat span {
   font-size: 12px;
   color: #7d7d7d;
@@ -1138,7 +1181,7 @@ body.page-id-5 {
 
 .home #header {
   position: absolute;
-  z-index: 2;
+  z-index: 9;
   width: 100%;
   background: none;
 }
@@ -1670,5 +1713,105 @@ body.page-id-5 {
   background-size: 50px;
   padding-right: 60px;
   text-align: left;
+}
+
+.stickiers {
+  position: absolute;
+  z-index: 99;
+  right: 0px;
+  top: 250px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 998px) {
+  .stickiers {
+    display: none;
+  }
+}
+
+.stickiers.active {
+  position: fixed;
+  z-index: 999;
+  top: 75px;
+}
+
+.stickiers.active .stickier {
+  margin-bottom: 10px;
+}
+
+.stickiers.active .stickier .wraper span {
+  font-size: 12px;
+}
+
+.stickier {
+  margin-bottom: 60px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .stickier {
+    margin-bottom: 20px;
+  }
+}
+
+.stickier .wraper {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  background-color: #900000;
+  background-image: url("../img/bg-st.png");
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+  .stickier .wraper {
+    padding: 5px;
+  }
+}
+
+.stickier .wraper:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-right: 30px solid #95050a;
+  border-bottom: 36px solid transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+  .stickier .wraper:before {
+    border-bottom: 26px solid transparent;
+  }
+}
+
+.stickier .wraper img {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.stickier .wraper span {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .stickier .wraper span {
+    font-size: 12px;
+  }
+}
+
+.stickier:hover .wraper {
+  padding-right: 50px;
 }
 /*# sourceMappingURL=style.css.map */
