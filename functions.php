@@ -5,7 +5,6 @@ if ( ! function_exists( 'cr_register_nav_menu' ) ) {
     function cr_register_nav_menu(){
         register_nav_menus( array(
             'primary_menu' => __( 'Primary Menu', 'cr' ),
-			'secundary_menu' => __( 'Mobile Menu', 'cr' ),
         ) );
     }
     add_action( 'after_setup_theme', 'cr_register_nav_menu', 0 );

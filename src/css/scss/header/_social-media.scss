@@ -1,0 +1,38 @@
+.social-media{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      @media #{$sm} {
+        flex-wrap: wrap;
+     }
+      @media #{$xs} {
+        order:1
+      }
+    li{
+        a{
+            display: flex;
+            align-items: center;
+            justify-content:center ;
+            width: 40px;
+            height: 40px;
+            background-color: $main;
+            text-align: center;
+            margin: 6px;
+            @include trans;
+            svg path{
+                @include trans;
+            }
+            &:hover{
+                background-color: #fff;
+                svg{
+                    path{
+                        fill:$main;
+                    }
+                }
+            }
+        }
+    }
+}
