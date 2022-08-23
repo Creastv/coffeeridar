@@ -1,0 +1,53 @@
+.team-section{
+    padding: 50px 0;
+    *{
+        color:#fff;
+    }
+    .container{
+        max-width: 1150px;
+    }
+    .osoby{
+        display: flex;
+        justify-content: center;
+         @media #{$md} {
+        flex-wrap: wrap;
+         }
+        .osoba{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            // width: 50%;
+             @media #{$md} {
+                width: 100%;
+             }
+            .img{
+                padding: 20px;
+                border-radius: 100%;
+                overflow: hidden;
+              
+                img{
+                    // display: block;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 100%;
+                      border: 15px solid $black;
+                    box-shadow: 0px 0px 0px 1px rgba(255,255,255, 0.2);
+                    
+                }
+            }
+            .inf{
+                h3{
+                    font-size: 30px;
+                    font-weight: 300;
+                    margin: 0;
+                    padding: 0;
+                }
+                span{
+                    font-size: 24px;
+                    font-weight: 300;
+                    color:$main;
+                }
+            }
+        }
+    }
+}
