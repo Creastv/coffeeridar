@@ -1,0 +1,72 @@
+.form-group {
+    margin-bottom: 15px;
+    label {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      color: #626161;
+      font-size: 14px;
+    }
+    label{
+        padding: 10px 10px 0;
+        display: block;
+        margin-bottom: 0px;
+        span.red{
+            color:$main;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: block;
+        }
+        br{
+            display: none;
+        }
+        .wpcf7-form-control-wrap{
+            display: block;
+            .wpcf7-form-control{
+            display: block;
+            width: 100%;
+            min-height: 50px;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff!important;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            &:focus {
+                color: #495057;
+                background-color: #fff;
+                border-color: #80bdff;
+                outline: 0;
+                box-shadow: 0 0 0 0.2rem rgba($main, 0.25);
+            }
+            }
+        }
+    }
+    .wpcf7-acceptance{
+        .wpcf7-list-item-label{
+            font-size: 10px;
+        }
+    }
+    .wpcf7-submit{
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: none;
+        background: none;
+         border:none;
+        min-height: 50px;
+        transform: translateY(41px);
+        width: 100%;
+        padding: 0 30px ;
+        opacity: 1!important;
+    }
+}
+
+.wpcf7-not-valid-tip{
+    font-size: 12px;
+    margin-top: 10px;
+    color: $main;
+   
+}

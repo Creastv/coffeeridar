@@ -1,9 +1,11 @@
 @import "scss/mixins";
 @import "scss/variable";
 @import "scss/typo";
+@import "scss/form";
 
 @import "scss/global";
 @import "scss/footer";
+
 @import "scss/header/header";
 @import "scss/header/navbar";
 @import "scss/header/nav";
@@ -22,3 +24,4 @@
 @import "scss/acf-parts/news-section";
 @import "scss/acf-parts/team-section";
 @import "scss/acf-parts/training-section";
+@import "scss/acf-parts/reservation-form";
