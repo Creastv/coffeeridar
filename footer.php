@@ -27,7 +27,7 @@
         </div>
     </div>
 </footer>
-
+<?php get_template_part('templates-parts/extras/stickers'); ?>
 <span id="go-to-top" ></span>
 <?php wp_footer(); ?>
 

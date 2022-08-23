@@ -4,6 +4,7 @@ $title = get_field('tytul_szkolenia');
 $desc = get_field('opis_szkolenia');
 ?>
 <?php if($on) { ?>
+<span class="anchor" id="<?php the_field('anchor_szk')?>"></span> 
 <section id="training-section">
     <div class="container-fluid">
         <div class="row">

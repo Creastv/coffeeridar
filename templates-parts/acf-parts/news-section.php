@@ -41,7 +41,7 @@ $title = get_field('tytul_wyd');
                                         <p><?php echo $opis; ?></p>
                                     <?php } ?>
                                     <?php if($link) { ?>
-                                        <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                        <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="_blank"><?php echo esc_html( $link_title ); ?></a>
                                     <?php } ?>
                                 </div>
                             </article>

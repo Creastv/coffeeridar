@@ -16,11 +16,41 @@
   top: 0;
   left: 0;
   background-color: $black;
+  padding: 0px 15px;
+  @media #{$sm} {
+    padding: 10px;
+  }
+
   .social-media{
-    display: none;
+     @media #{$sm} {
+       display: none; 
+     }
+    
+  }
+  .toggler-nav{
+    @media #{$sm} {
+      order: 2;
+    }
   }
   .contact-header{
-    display: none;
+    // display: none;
+    // display: none;
+    @media #{$sm} {
+       order:1;
+       font-size: 12px;
+       img{
+        width: 30px;
+        height: auto;
+       }
+     }
+     li{
+      &:nth-child(2){
+        @media #{$xs} {
+          display: none;
+        }
+      }
+     }
+
   }
 }
 
