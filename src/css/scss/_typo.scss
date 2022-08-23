@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-  color:$main;
+  color:$black;
 }
 p,
 li,
@@ -32,6 +32,19 @@ a {
     color: lighten($main, 20%);
   }
 }
+
+.btn{
+  padding: 10px 30px;
+  color:#fff;
+  background-color: $black;
+  text-decoration: none;
+  @include trans;
+  &:hover{
+    background-color: $main;
+  }
+}
+
+
 .text-center {
   text-align: center;
 }

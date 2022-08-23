@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #900000;
+  color: #0a0a0a;
 }
 
 p,
@@ -39,12 +39,109 @@ a:hover {
   color: #f60000;
 }
 
+.btn {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #0a0a0a;
+  text-decoration: none;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.btn:hover {
+  background-color: #900000;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-right {
   text-align: right;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #626161;
+  font-size: 14px;
+}
+
+.form-group label {
+  padding: 10px 10px 0;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.form-group label span.red {
+  color: #900000;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-group label br {
+  display: none;
+}
+
+.form-group label .wpcf7-form-control-wrap {
+  display: block;
+}
+
+.form-group label .wpcf7-form-control-wrap .wpcf7-form-control {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff !important;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-group label .wpcf7-form-control-wrap .wpcf7-form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(144, 0, 0, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(144, 0, 0, 0.25);
+}
+
+.form-group .wpcf7-acceptance .wpcf7-list-item-label {
+  font-size: 10px;
+}
+
+.form-group .wpcf7-submit {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  border: none;
+  min-height: 50px;
+  -webkit-transform: translateY(41px);
+          transform: translateY(41px);
+  width: 100%;
+  padding: 0 30px;
+  opacity: 1 !important;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #900000;
 }
 
 html {
@@ -747,5 +844,537 @@ body {
 
 .contact-header li a:hover {
   color: #900000;
+}
+
+.home {
+  overflow-x: hidden;
+}
+
+.home #main {
+  margin-bottom: 0;
+}
+
+#bikes {
+  position: relative;
+}
+
+#bikes .bike-cart {
+  text-align: center;
+  padding: 20px;
+}
+
+#bikes .bike-cart:hover .wraper {
+  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+#bikes .bike-cart .wraper {
+  background-color: #fff;
+  padding: 20px 0;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+#bikes .bike-cart .cat span {
+  font-size: 12px;
+  color: #7d7d7d;
+}
+
+#bikes .bike-cart h3 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #bikes .bike-cart h3 {
+    font-size: 21px;
+  }
+}
+
+#bikes .bike-cart .price p {
+  color: #900000;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+#bikes .bike-cart .price p small {
+  font-size: 14px;
+}
+
+#bikes .bike-cart .pdf a {
+  font-size: 12px !important;
+  color: #7d7d7d !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  #bikes .arrows img {
+    width: 70px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #bikes .arrows img {
+    width: 50px;
+    height: auto;
+  }
+}
+
+#bikes .arrows .s-button-next {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 50%;
+}
+
+#bikes .arrows .s-button-next:hover {
+  opacity: 0.2;
+}
+
+#bikes .arrows .s-button-prev {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#bikes .arrows .s-button-prev:hover {
+  opacity: 0.2;
+}
+
+#get-close {
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  background-color: #0a0a0a;
+  background-image: url(../img/get-closer-2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  margin-top: -75px;
+}
+
+#get-close .container {
+  max-width: 700px;
+}
+
+#get-close * {
+  color: #fff;
+}
+
+#get-close .section-title {
+  margin-bottom: 100px;
+}
+
+#get-close .section-title h2 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 460px) {
+  #get-close .section-title h2 {
+    font-size: 31px;
+  }
+}
+
+#get-close .sep__section-title {
+  margin-top: 50px;
+  display: block;
+}
+
+#get-close .sep__section-title span {
+  display: block;
+  width: 44px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+#get-close .sep__section-title span:before, #get-close .sep__section-title span:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 34px;
+  background-color: rgba(255, 255, 255, 0.2);
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+#get-close .sep__section-title span:before {
+  top: -10px;
+}
+
+#get-close .sep__section-title span:after {
+  bottom: -10px;
+}
+
+#get-close .desc {
+  margin-bottom: 50px;
+}
+
+#get-close .button {
+  position: relative;
+  text-align: center;
+}
+
+#get-close .button:before, #get-close .button:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  top: 50%;
+  width: calc(50% - 160px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 460px) {
+  #get-close .button:before, #get-close .button:after {
+    display: none;
+  }
+}
+
+#get-close .button:before {
+  left: 0px;
+}
+
+#get-close .button:after {
+  right: 0px;
+}
+
+#get-close .button .btn {
+  text-transform: uppercase;
+  padding: 10px 50px;
+}
+
+@media only screen and (max-width: 460px) {
+  #get-close .button .btn {
+    padding: 10px;
+    display: block;
+    width: 100%;
+  }
+}
+
+.hero-section {
+  background-image: url("../img/header-bg-full.png");
+  background-size: cover;
+  width: 100vw;
+  height: 90vh;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  top: 0px;
+  background-color: #0a0a0a;
+  padding: 250px 0;
+}
+
+.hero-section .logo-svg {
+  width: 30%;
+  height: auto;
+}
+
+@media only screen and (max-width: 460px) {
+  .hero-section .logo-svg {
+    width: 70%;
+  }
+}
+
+.hero-section .scroll {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  text-decoration: none;
+}
+
+.hero-section .scroll:hover svg path {
+  fill: #900000;
+}
+
+.hero-section .scroll:hover span {
+  color: #900000;
+}
+
+.hero-section .scroll svg {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  width: 30px;
+  height: 58px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.hero-section .scroll svg path {
+  fill: #fff;
+}
+
+.hero-section .scroll span {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  font-size: 2vw;
+  color: #fff;
+}
+
+.home #header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background: none;
+}
+
+#training-section {
+  background-color: #f4f5f5;
+  position: relative;
+  z-index: 2;
+}
+
+#training-section .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#training-section .row {
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+#training-section .img {
+  background-image: url(../img/traning-section.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: -25px;
+}
+
+@media only screen and (max-width: 998px) {
+  #training-section .img {
+    left: -25px;
+    min-height: 200px;
+  }
+}
+
+#training-section .content {
+  padding: 50px 0 0;
+}
+
+@media only screen and (max-width: 998px) {
+  #training-section .content {
+    padding: 0;
+  }
+}
+
+#training-section .content .desc {
+  margin-bottom: 50px;
+}
+
+#training-section .content .desc h2 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+#training-section .content .desc h2 b {
+  font-size: 28px;
+}
+
+#training-section .content .desc p {
+  font-size: 12px;
+}
+
+#training-section .content .training {
+  margin-bottom: 50px;
+}
+
+#training-section .content .training h3 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+#training-section .content .training p {
+  font-size: 48px;
+  font-weight: 300;
+  color: #900000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+#training-section .content .training p small {
+  font-size: 18px;
+}
+
+#training-section .content .training .pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#training-section .content .training .pdf svg {
+  margin-right: 20px;
+}
+
+#training-section .content .training .pdf a {
+  font-size: 12px;
+}
+
+#rez-form {
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  background-color: #0a0a0a;
+  background-image: url(../img/form-rezrvation.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0 0;
+}
+
+#rez-form h2 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+#rez-form .rezerwacja {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#rez-form .rezerwacja .form-group:nth-child(1) {
+  width: 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #rez-form .rezerwacja .form-group:nth-child(1) {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #rez-form .rezerwacja .form-group:nth-child(1) {
+    width: 100%;
+  }
+}
+
+#rez-form .rezerwacja .form-group:nth-child(2) {
+  width: 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #rez-form .rezerwacja .form-group:nth-child(2) {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #rez-form .rezerwacja .form-group:nth-child(2) {
+    width: 100%;
+  }
+}
+
+#rez-form .rezerwacja .form-group:nth-child(3) {
+  width: 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #rez-form .rezerwacja .form-group:nth-child(3) {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #rez-form .rezerwacja .form-group:nth-child(3) {
+    width: 100%;
+  }
+}
+
+#rez-form .rezerwacja .form-group:nth-child(4) {
+  width: 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #rez-form .rezerwacja .form-group:nth-child(4) {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #rez-form .rezerwacja .form-group:nth-child(4) {
+    width: 100%;
+  }
+}
+
+#rez-form .rezerwacja .form-group:nth-child(5) {
+  width: 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #rez-form .rezerwacja .form-group:nth-child(5) {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #rez-form .rezerwacja .form-group:nth-child(5) {
+    width: 100%;
+  }
+}
+
+#rez-form .rezerwacja .form-group:nth-child(6) {
+  width: 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #rez-form .rezerwacja .form-group:nth-child(6) {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #rez-form .rezerwacja .form-group:nth-child(6) {
+    width: 100%;
+  }
+}
+
+#rez-form .rezerwacja .wpcf7-submit {
+  background-image: url(../img/btn-form.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 50px;
+  padding-right: 60px;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

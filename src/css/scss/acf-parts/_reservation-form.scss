@@ -1,0 +1,88 @@
+#rez-form{
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+    position: relative;
+    background-color: $black;
+    background-image: url(../img/form-rezrvation.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0 0;
+    h2{
+        font-weight: 300;
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .rezerwacja{
+        flex-wrap: wrap;
+        .form-group{
+            &:nth-child(1){
+                width: 20%;
+                 @media #{$lg} {
+                    width:33.33%;
+                 }
+                 @media #{$sm} {
+                    width: 100%;
+                 }
+            }
+            &:nth-child(2){
+                width: 20%;
+                @media #{$lg} {
+                    width:33.33%;
+                 }
+                  @media #{$sm} {
+                    width: 100%;
+                 }
+            }
+            &:nth-child(3){
+                width: 20%;
+                @media #{$lg} {
+                    width:33.33%;
+                 }
+                  @media #{$sm} {
+                    width: 100%;
+                 }
+            }
+            &:nth-child(4){
+                 width: 10%;
+                 @media #{$lg} {
+                    width:33.33%;
+                 }
+                   @media #{$sm} {
+                    width: 100%;
+                 }
+            }
+            &:nth-child(5){
+                 width: 10%;
+                 @media #{$lg} {
+                    width:33.33%;
+                 }
+                   @media #{$sm} {
+                    width: 100%;
+                 }
+            }
+            &:nth-child(6){
+                 width: 20%;
+                 @media #{$lg} {
+                    width:33.33%;
+                 }
+                   @media #{$sm} {
+                    width: 100%;
+                 }
+            }
+        }
+
+        .wpcf7-submit{
+            background-image: url(../img/btn-form.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 50px;
+            padding-right: 60px;
+            text-align: left;
+
+        }
+    }
+}
