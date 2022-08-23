@@ -1,0 +1,61 @@
+.logos-section{
+    background-color: #161616;
+    padding: 50px 0;
+    *{
+        color:#fff;
+    }
+    .logo{
+        text-align: center;
+        img{
+            filter:  brightness(0) invert(1);
+            opacity: 0.3;
+            @include trans;
+        }
+        &:hover{
+            img{
+                filter:  brightness(1) invert(0);
+                opacity: 1;
+            }
+        }
+    }
+    .section-title{
+        margin-bottom: 100px;
+        h2{
+            font-size: 48px;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+             @media #{$xs} {
+                font-size: 31px;
+             }
+        }
+        .sep__section-title{
+                margin-top: 50px;
+                display: block;
+            span{
+                display: block;
+                width: 44px;
+                height: 1px;
+                background-color: rgba(255, 255, 255, 0.2);
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+                &:before, &:after{
+                    content:"";
+                    position: absolute;
+                    height: 1px;
+                    width: 34px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+                &:before{
+                    top: -10px;
+                }
+                &:after{
+                    bottom: -10px;
+                }
+            }
+        }
+    }
+}

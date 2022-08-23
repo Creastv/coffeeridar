@@ -1,5 +1,7 @@
 <?php
 add_theme_support('post-thumbnails');
+add_image_size( 'team', 246, 246, array( 'center', 'center' ) );
+add_image_size( 'news', 335, 294, array( 'center', 'center' ) );
 
 if ( ! function_exists( 'cr_register_nav_menu' ) ) {
     function cr_register_nav_menu(){
@@ -15,10 +17,16 @@ function cr_scripts() {
 	wp_enqueue_style( 'cr-custome-style', get_template_directory_uri().'/src/css/style.min.css' ); 
 	wp_enqueue_script('cr-main', get_template_directory_uri().'/src/js/main.js', array( 'jquery' ),'3', true );
     
- if(is_page( 38 ) ){
+ if(is_page( 38 ) || is_page( 5)  ){
       wp_enqueue_style( 'cr-svipeer_css', 'https://unpkg.com/swiper/swiper-bundle.min.css' );
       wp_enqueue_script('cr-swiper_js', 'https://unpkg.com/swiper/swiper-bundle.min.js',  array(), '20130456', true );
-      wp_enqueue_script( 'cr-bikes', get_template_directory_uri() . '/src/js/bikes.js', array(), '20130457', true );
+     
+  }
+  if(is_page( 38 )  ){
+     wp_enqueue_script( 'cr-bikes', get_template_directory_uri() . '/src/js/bikes.js', array(), '20130457', true );
+  }
+  if( is_page(5)  ){
+     wp_enqueue_script( 'cr-logo', get_template_directory_uri() . '/src/js/logo.js', array(), '20130457', true );
   }
 }
 add_action( 'wp_enqueue_scripts', 'cr_scripts' );
