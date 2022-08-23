@@ -57,16 +57,20 @@
 #go-to-top{
     position: fixed;
     z-index: 2222222;
-    right: 0px;
-    top: 50%;
+    right: 30px;
+    bottom: 100px;
     -webkit-transform: translate(110px, -50%);
     transform: translate(110px, -50%);
     border: 1px solid $main;
     width: 28px;
     height: 28px;
-    border-radius: 100%;
+    // border-radius: 100%;
     -webkit-transition: all ease-in-out 0.2s;
     transition: all ease-in-out 0.2s;
+    @media #{$sm} {
+        right: 10px;
+        bottom: 100px;
+    }
     &:after{
         content: "";
         position: absolute;

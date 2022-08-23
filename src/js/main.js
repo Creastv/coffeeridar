@@ -30,15 +30,15 @@
     }
   });
 
-  // sticy nabvbar
-  const navbar = document.querySelector(".navbar");
-   document.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 200) {
-       navbar.classList.add("active");
-    } else {
-      navbar.classList.remove("active");
-    }
-  });
+  // // sticy nabvbar
+  // const navbar = document.querySelector(".navbar");
+  //  document.addEventListener("scroll", () => {
+  //   if (window.pageYOffset >= 200) {
+  //      navbar.classList.add("active");
+  //   } else {
+  //     navbar.classList.remove("active");
+  //   }
+  // });
    
 
 })();
