@@ -16,8 +16,8 @@
     }
   });
 
+  // Close after click the navmenu on mobile
   const itemsNAv = document.querySelectorAll('.header-nav a')
-    // console.log(itemsNAv[1]);
   for(let i = 0; i < itemsNAv.length; i++){
     console.log(itemsNAv[1]);
     itemsNAv[i].addEventListener("click", () => {
@@ -29,7 +29,6 @@
 
   // Go to Top
   const goToTop = document.querySelector("#go-to-top");
-  
   goToTop.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
@@ -61,7 +60,19 @@
     }
   });
    
-  
+const modalOpener = document.querySelector('.modal-opener');
+console.log(modalOpener)
+const modalCloser = document.querySelector('.modal-closer');
+const modal = document.querySelector('.modal-appointment ');
 
+modalOpener.addEventListener("click", () => { 
+  modal.classList.add("modal-display");
+  document.body.style.overflow = "hidden";
+});
+modalCloser.addEventListener("click", () => { 
+  modal.classList.remove("modal-display");
+   document.body.style.overflow = "initial";
+});
 
 })();
+
