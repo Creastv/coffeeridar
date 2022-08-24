@@ -1,6 +1,7 @@
 <?php 
 $image = get_field('logo'); 
 $scroll_title = get_field('scroll_title');
+$goTo = get_field('idz_do');
 ?>
 <span class="anchor" id="<?php the_field('anchor_hero')?>"></span>
 <section class="hero-section">
@@ -64,7 +65,7 @@ $scroll_title = get_field('scroll_title');
             <?php } ?>
         </div>
         <div class="col col-1 text-center">
-            <a class="scroll" href="#">
+            <a class="scroll" href="<?php echo $goTo; ?>">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1.5px"
                     height="2.5px" viewBox="0 0 1.5 2.5" style="enable-background:new 0 0 1.5 2.5;" xml:space="preserve">
                 <path fill="#3A3E49" d="M0,1.5C0,1.5,0,1.5,0,1.5c0-0.1,0.1-0.1,0.1-0.1l0.5,0.8V0.1c0,0,0-0.1,0.1-0.1c0,0,0.1,0,0.1,0.1v2.2l0.6-0.8
