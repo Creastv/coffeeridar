@@ -32,6 +32,7 @@ function cr_scripts() {
 add_action( 'wp_enqueue_scripts', 'cr_scripts' );
 
 require get_template_directory() . '/inc/cpt.php';
+require get_template_directory() . '/inc/customizer.php';
 
 
 function dynamic_field_values ( $tag, $unused ) {
