@@ -29,6 +29,21 @@ function inb_customize_register( $wp_customize ) {
     ) );
     // End Header
 
+    // Stickers
+	$wp_customize->add_section( 'stickers' , array(
+	'title' => __( 'Stickers', 'cr' ),
+	'priority' => 105,
+	) );
+
+	$wp_customize->add_setting( 'st_link' );
+    $wp_customize->add_control( 'st_link', array(
+        'label' => __( 'Zobacz na mapie', 'cr' ),
+        'type' => 'text',
+        'section' => 'stickers',
+    ) );
+    
+    // END Stickers
+
 	// Footer
 	$wp_customize->add_section( 'footer' , array(
 	'title' => __( 'Footer', 'cr' ),
