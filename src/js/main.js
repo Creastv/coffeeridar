@@ -66,10 +66,12 @@ const modalCloser = document.querySelector('.modal-closer');
 const modal = document.querySelector('.modal-appointment ');
 
 modalOpener.addEventListener("click", () => { 
+  event.preventDefault()
   modal.classList.add("modal-display");
   document.body.style.overflow = "hidden";
 });
 modalCloser.addEventListener("click", () => { 
+  event.preventDefault()
   modal.classList.remove("modal-display");
    document.body.style.overflow = null;
 });
