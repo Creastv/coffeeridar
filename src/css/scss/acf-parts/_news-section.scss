@@ -10,36 +10,41 @@
         flex-wrap: wrap;
         li{
             width: 25%;
-             @media #{$lg} {
+            @media #{$lg} {
                 width: 50%;
-             }
-              @media #{$sm} {
+            }
+            @media #{$sm} {
                 width: 100%;
-             }
+            }
             article{
                 text-align: center;
                 padding: 20px;
+                @include trans;
                 .img{
                     margin-bottom: 30px;
                     position: relative;
+                    overflow: hidden;
                     img{
+                        @include trans;
                         width: 100%;
                         height: auto;
                         display: block;
                     }
                     &:after{
+                         @include trans;
                         content:"";
                         position: absolute;
                         z-index: 3;
                         width: 80%;
                         height: 3px;
                         background-color: $main;
-                        bottom: -3px;
+                        bottom: 0px;
                         left: 50%;
                         transform: translate(-50%, 0);
 
                     }
                 }
+               
                 .content{
                     padding: 0 20px;
                     h3{
@@ -49,7 +54,7 @@
                         margin: 0;
                         padding: 0;
                         margin-bottom: 30px;
-
+                        @include trans;
                     }
                     p{
                         font-size: 12px;
@@ -59,6 +64,25 @@
                     }
                     a{
                         color:$main
+                    }
+                }
+                 &:hover{
+                    // box-shadow: 0 0 24px 0px rgba(255, 255, 255, .26);
+                    @include shadow;
+                    background-color: #161616;
+                    .img{
+                        img{
+                            transform: scale(1.03);
+                        }
+                        &:after{
+                            width: 100%;
+                            
+                        }
+                    }
+                    .content{
+                        h3{
+                            color:$main;
+                        }
                     }
                 }
             }
