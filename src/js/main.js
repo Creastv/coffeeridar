@@ -71,7 +71,7 @@ modalOpener.addEventListener("click", () => {
 });
 modalCloser.addEventListener("click", () => { 
   modal.classList.remove("modal-display");
-   document.body.style.overflow = "initial";
+   document.body.style.overflow = null;
 });
 
 })();
