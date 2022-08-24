@@ -1,0 +1,120 @@
+.modal{
+    position: fixed;
+    z-index: 999999999;
+    //  background:red;
+    top: -100vh;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    overflow: auto;
+    transition: top ease-in-out 0.4s;
+    // transition: opacity ease-in-out 0.12s;
+    
+    .modal-box{
+        padding: 30px;
+        .modal-body{
+             // @import trans;
+                box-shadow: 0 0 20px 0px rgba(0,0,0, .35);
+                background-color: $black;
+                padding: 5%;
+                width:90%;
+                max-width: 800px;
+                // height: 400px;
+                position: absolute;
+                z-index: 2;
+                top: 50px;
+                left:50%;
+                transform: translate(-50%, 0);
+            .modal-closer{
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color:#fff;
+                font-size: 31px;
+                line-height: 0;
+                padding: 10px;
+                font-weight: 400;
+                &:hover{
+                    color:$main;
+                }
+            }
+            #bg-logo{
+                    position:absolute;
+                    bottom:0;
+                    left:0;
+                    width: 80%;
+                    height: auto;
+                    opacity: 0.07;
+            }
+            h2{
+                color:#fff;
+                font-size: 30px;
+                font-weight: 300;
+                line-height: 30px;
+                small{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .bg{
+        position: fixed;
+        z-index: 1;
+        opacity: 0;
+        top: 0;
+        background-color:rgba(#171717, 0.94);
+        width: 100%;
+        height:0;
+        transition: height ease-in-out 0.2s;
+         transition: opacity ease-in-out 0.5s;
+
+    }
+    .row.serwis{
+        position: relative;
+        z-index: 3;
+        input{
+            background-color:$black!important;
+            border:1px solid #3f3533;
+            color:#6c6666;
+        }
+        .form-group{
+            &:last-child{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    input{
+                        cursor: pointer;
+                        width: initial;
+                        padding-right: 100px;
+                        background-image: url(../img/arrow-form-serwis.png)!important;
+                        background-repeat: no-repeat;
+                        background-position: center right;
+                        border:none;
+                        background-color:transparent!important;
+                        color:#fff;
+                    }
+            }
+        }
+        .wpcf7-spinner{
+            position: absolute;
+        }
+    
+    }
+     .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+            border-color: #ffb900;
+            color: #fff!important;
+            font-size: 12px;
+        }
+}
+
+
+.modal.modal-display{
+    opacity: 1;
+    top:0;
+    .bg{
+        height: 100vh;
+        opacity: 1;
+    }
+}

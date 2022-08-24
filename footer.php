@@ -56,6 +56,7 @@ $map = get_theme_mod('map_footer');
     </div>
 </footer>
 <?php get_template_part('templates-parts/extras/stickers'); ?>
+<?php get_template_part('templates-parts/extras/modal'); ?>
 <span id="go-to-top" ></span>
 <?php wp_footer(); ?>
 

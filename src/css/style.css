@@ -1814,4 +1814,139 @@ body.page-id-5 {
 .stickier:hover .wraper {
   padding-right: 50px;
 }
+
+.modal {
+  position: fixed;
+  z-index: 999999999;
+  top: -100vh;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  overflow: auto;
+  -webkit-transition: top ease-in-out 0.4s;
+  transition: top ease-in-out 0.4s;
+}
+
+.modal .modal-box {
+  padding: 30px;
+}
+
+.modal .modal-box .modal-body {
+  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  background-color: #0a0a0a;
+  padding: 5%;
+  width: 90%;
+  max-width: 800px;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.modal .modal-box .modal-body .modal-closer {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 31px;
+  line-height: 0;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.modal .modal-box .modal-body .modal-closer:hover {
+  color: #900000;
+}
+
+.modal .modal-box .modal-body #bg-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: auto;
+  opacity: 0.07;
+}
+
+.modal .modal-box .modal-body h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.modal .modal-box .modal-body h2 small {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal .bg {
+  position: fixed;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  background-color: rgba(23, 23, 23, 0.94);
+  width: 100%;
+  height: 0;
+  -webkit-transition: height ease-in-out 0.2s;
+  transition: height ease-in-out 0.2s;
+  -webkit-transition: opacity ease-in-out 0.5s;
+  transition: opacity ease-in-out 0.5s;
+}
+
+.modal .row.serwis {
+  position: relative;
+  z-index: 3;
+}
+
+.modal .row.serwis input {
+  background-color: #0a0a0a !important;
+  border: 1px solid #3f3533;
+  color: #6c6666;
+}
+
+.modal .row.serwis .form-group:last-child {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal .row.serwis .form-group:last-child input {
+  cursor: pointer;
+  width: initial;
+  padding-right: 100px;
+  background-image: url(../img/arrow-form-serwis.png) !important;
+  background-repeat: no-repeat;
+  background-position: center right;
+  border: none;
+  background-color: transparent !important;
+  color: #fff;
+}
+
+.modal .row.serwis .wpcf7-spinner {
+  position: absolute;
+}
+
+.modal .wpcf7 form.invalid .wpcf7-response-output, .modal .wpcf7 form.unaccepted .wpcf7-response-output, .modal .wpcf7 form.payment-required .wpcf7-response-output {
+  border-color: #ffb900;
+  color: #fff !important;
+  font-size: 12px;
+}
+
+.modal.modal-display {
+  opacity: 1;
+  top: 0;
+}
+
+.modal.modal-display .bg {
+  height: 100vh;
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
