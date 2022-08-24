@@ -39,6 +39,10 @@
             display: block;
             margin: 0 auto;
             margin-bottom: 20px;
+            display: block;
+            animation-name: arrow;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
             path{
                 fill:#fff;
             }
@@ -47,6 +51,7 @@
             @include trans;
             font-size: 2vw;
             color:#fff;
+            
         }
     }
 }
@@ -58,4 +63,16 @@
         width: 100%;
         background:none;
     }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 30px);
+  }
+  100% {
+    transform: translate(0,0,);
+  }
 }
