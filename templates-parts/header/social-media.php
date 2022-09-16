@@ -75,7 +75,7 @@ $what        = get_theme_mod('what');
     <?php } ?>
     <?php if ( $what ) { ?>
     <li>
-        <a href="whatsapp://send?phone=34684116542" target="_blank">
+        <a href="whatsapp://send?phone=<?php echo $what; ?>" target="_blank">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.8px"
                 height="22.9px" viewBox="0 0 22.8 22.9" style="enable-background:new 0 0 22.8 22.9;" xml:space="preserve">
             <style type="text/css">
