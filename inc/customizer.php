@@ -101,6 +101,15 @@ function inb_customize_register( $wp_customize ) {
         'section' => 'socialmedia',
     ) );
 
+    // whatsapp
+	$wp_customize->add_setting( 'what' );
+
+    $wp_customize->add_control( 'what', array(
+        'label' => __( 'Whatsapp', 'cr' ),
+        'type' => 'link',
+        'section' => 'socialmedia',
+    ) );
+
 	// Twitter
 	$wp_customize->add_setting( 'in' );
 
