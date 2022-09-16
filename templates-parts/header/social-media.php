@@ -3,7 +3,7 @@ $fb         = get_theme_mod('fb');
 $tw         = get_theme_mod('tw');
 $git        = get_theme_mod('git');
 $in         = get_theme_mod('in');
-$wh         = get_theme_mod('what');
+$what        = get_theme_mod('what');
 ?>
 
 <ul class="social-media">
