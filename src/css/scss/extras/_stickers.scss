@@ -7,7 +7,7 @@
     text-align: right;
     @media #{$sm} {
         // display: none;
-        top:110px
+        top:185px
     }
 }
 .stickiers.active{
@@ -58,7 +58,7 @@
              }
              @media #{$sm} {
                 left: -10px;
-                border-top: 21px solid transparent;
+                border-top: 16px solid transparent;
                 border-right: 10px solid #95050a;
                 border-bottom: 19px solid transparent;
              }
@@ -85,13 +85,13 @@
                 font-size: 12px;
             }
             @media #{$sm} {
-                
+                font-size: 12px;
             }
             br{
                 display: none;
-                @media #{$sm} {
-                    display: block;
-                }
+                // @media #{$sm} {
+                //     display: block;
+                // }
             }
         }
     }

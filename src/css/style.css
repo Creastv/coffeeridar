@@ -1814,7 +1814,7 @@ body.page-id-5 {
 
 @media only screen and (max-width: 768px) {
   .stickiers {
-    top: 110px;
+    top: 185px;
   }
 }
 
@@ -1887,7 +1887,7 @@ body.page-id-5 {
 @media only screen and (max-width: 768px) {
   .stickier .wraper:before {
     left: -10px;
-    border-top: 21px solid transparent;
+    border-top: 16px solid transparent;
     border-right: 10px solid #95050a;
     border-bottom: 19px solid transparent;
   }
@@ -1924,14 +1924,14 @@ body.page-id-5 {
   }
 }
 
-.stickier .wraper span br {
-  display: none;
+@media only screen and (max-width: 768px) {
+  .stickier .wraper span {
+    font-size: 12px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-  .stickier .wraper span br {
-    display: block;
-  }
+.stickier .wraper span br {
+  display: none;
 }
 
 .stickier:hover .wraper {
