@@ -1143,7 +1143,7 @@ body.page-id-5 {
   padding: 250px 0;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 768px) {
   .hero-section {
     min-height: 750px;
   }
@@ -1154,7 +1154,7 @@ body.page-id-5 {
   height: auto;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 768px) {
   .hero-section .logo-svg {
     width: 70%;
     position: absolute;

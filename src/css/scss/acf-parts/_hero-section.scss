@@ -9,13 +9,13 @@
     top: 0px;
     background-color: $black;
     padding: 250px 0;
-     @media #{$xs} {
+     @media #{$sm} {
         min-height: 750px;
      }
     .logo-svg{
         width: 30%;
         height: auto;
-        @media #{$xs} {
+        @media #{$sm} {
             width: 70%;
             position: absolute;
             left: 50%;
