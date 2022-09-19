@@ -1676,6 +1676,12 @@ body.page-id-5 {
   font-size: 28px;
 }
 
+@media only screen and (max-width: 460px) {
+  #training-section .content .desc h2 b {
+    font-size: 21px;
+  }
+}
+
 #training-section .content .desc p {
   font-size: 12px;
 }
@@ -1899,8 +1905,8 @@ body.page-id-5 {
 
 .stickiers.active {
   position: fixed;
-  z-index: 999;
-  top: 75px;
+  z-index: 5;
+  top: 80px;
 }
 
 .stickiers.active .stickier {

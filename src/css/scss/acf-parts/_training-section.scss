@@ -55,6 +55,9 @@
                 margin-bottom: 30px;
                 b{
                     font-size: 28px;
+                    @media #{$xs} {
+                        font-size: 21px;
+                    }
 
                 }
             }

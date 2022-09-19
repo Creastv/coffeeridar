@@ -20,8 +20,8 @@
 }
 .stickiers.active{
     position: fixed;
-    z-index: 999;
-    top: 75px;
+    z-index: 5;
+    top: 80px;
 
     .stickier{
         margin-bottom: 10px;
