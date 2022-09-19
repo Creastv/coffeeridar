@@ -1873,7 +1873,7 @@ body.page-id-5 {
 
 .stickiers {
   position: absolute;
-  z-index: 5;
+  z-index: 99;
   right: 0px;
   top: 250px;
   text-align: right;
