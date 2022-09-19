@@ -13,8 +13,10 @@
     .img{
         background-image: url(../img/traning-section.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left top;
+        // background-size: contain;
+        background-size: cover;
+        // background-position: left top;
+        background-position: center right;
         height: 100%;
          
         width: 100%;
@@ -31,7 +33,17 @@
         padding: 50px 0 0;
          @media #{$md} {
             padding: 0;
-         }
+        }
+        .row:nth-child(2){
+            .col-2{
+                @media #{$md} {
+                width: 50%;
+                }
+                 @media #{$sm} {
+                width: 100%;
+                }
+            }
+        }
         .desc{
             margin-bottom: 50px;
             h2{
@@ -66,6 +78,12 @@
                  margin: 0;
                 padding: 0;
                 margin-bottom: 10px;
+                @media #{$lg} {
+                    font-size: 41px;
+                }
+                @media #{$md} {
+                    font-size: 31px;
+                }
                 small{
                     font-size: 18px;
                   

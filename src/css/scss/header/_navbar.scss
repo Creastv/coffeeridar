@@ -6,6 +6,9 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    @media #{$sm} {
+      padding-bottom: 30px;
+    }
     @media #{$xs} {
       flex-wrap: wrap;
       justify-content: space-between;
@@ -53,7 +56,22 @@
 
   }
 }
-
+.navbar.active{
+  .active-logo{
+    display: block;
+  }
+}
+.active-logo{
+  display: none;
+  svg{
+   min-width: 100px;
+   padding: 10px;
+   @media #{$xs} {
+    max-width: 80px!important;
+    padding: 0;
+   }
+  }
+}
 .toggler-nav {
   cursor: pointer;
   display: none;

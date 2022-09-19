@@ -9,18 +9,24 @@
     top: 0px;
     background-color: $black;
     padding: 250px 0;
-     @media #{$sm} {
+     @media #{$md} {
         min-height: 750px;
      }
     .logo-svg{
         width: 30%;
         height: auto;
-        @media #{$sm} {
-            width: 70%;
+        @media #{$md} {
+            width: 40%;
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+        }
+         @media #{$sm} {
+           width: 40%;
+         }
+        @media #{$xs} {
+            width: 60%;
         }
     }
     .scroll{

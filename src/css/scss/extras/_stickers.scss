@@ -5,8 +5,16 @@
     right: 0px;
     top: 250px;
     text-align: right;
+     @media #{$lg} {
+        top: 200px;
+    }
+    @media #{$md} {
+        top: 190px;
+    }
     @media #{$sm} {
-        // display: none;
+        top:145px
+    }
+     @media #{$xs} {
         top:185px
     }
 }
