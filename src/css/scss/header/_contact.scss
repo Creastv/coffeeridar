@@ -31,9 +31,15 @@
                 @media #{$md} {
                     margin-right: 5px;
                 }
+                @media #{$sm} {
+                    width: 30px;
+                    height: auto;
+                }
             }
             span{
-            
+            @media #{$sm} {
+                font-size: 12px;
+            }
             }
             &:hover{
                 color:$main;

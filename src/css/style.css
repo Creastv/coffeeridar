@@ -880,6 +880,19 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .contact-header li a img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-header li a span {
+    font-size: 12px;
+  }
+}
+
 .contact-header li a:hover {
   color: #900000;
 }
@@ -1788,9 +1801,9 @@ body.page-id-5 {
   text-align: right;
 }
 
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 768px) {
   .stickiers {
-    display: none;
+    top: 110px;
   }
 }
 
@@ -1836,6 +1849,12 @@ body.page-id-5 {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .stickier .wraper {
+    padding: 2px 5px 2px 2px;
+  }
+}
+
 .stickier .wraper:before {
   content: "";
   position: absolute;
@@ -1854,10 +1873,28 @@ body.page-id-5 {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .stickier .wraper:before {
+    left: -10px;
+    border-top: 21px solid transparent;
+    border-right: 10px solid #95050a;
+    border-bottom: 19px solid transparent;
+  }
+}
+
 .stickier .wraper img {
   vertical-align: middle;
   display: inline-block;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .stickier .wraper img {
+    margin-right: 2px;
+    width: 30px;
+    padding: 0;
+    height: 30px;
+  }
 }
 
 .stickier .wraper span {
@@ -1873,6 +1910,16 @@ body.page-id-5 {
 @media only screen and (max-width: 1200px) {
   .stickier .wraper span {
     font-size: 12px;
+  }
+}
+
+.stickier .wraper span br {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .stickier .wraper span br {
+    display: block;
   }
 }
 
